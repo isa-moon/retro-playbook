@@ -50,4 +50,4 @@
 1. 基线：让一个不装 skill 的 Agent 处理 `fixtures/campaign-chengyan/`，提示词是「帮我复盘一下，把经验沉淀下来，下次做项目能用上」。
 2. 装 skill：同样的请求，经验库指到一个空目录，运行命令时加 `HOME=<临时目录>`，以免写入真实环境。
 3. 按评分表打分。
-4. 注意：SKILL.md 和 references 里的示例刻意不用澄言案例。修改时别把素材里的答案写进去，否则评测失效。
+4. 注意：`skills/retro-playbook/` 下的 SKILL.md 和 references 里的示例刻意不用澄言案例。修改时别把素材里的答案写进去，否则评测失效。

@@ -37,7 +37,7 @@
 npx skills add isa-moon/retro-playbook -g
 ```
 
-也可以手动把整个仓库文件夹放进 Agent 的 skills 目录（如 Claude Code 的 `~/.claude/skills/retro-playbook/`）。
+也可以手动把 `skills/retro-playbook/` 这个文件夹放进 Agent 的 skills 目录（如 Claude Code 的 `~/.claude/skills/retro-playbook/`）。仓库里的 `evals/` 是评测素材，不需要安装。
 
 装好后在对话里说：
 
@@ -59,15 +59,16 @@ npx skills add isa-moon/retro-playbook -g
 
 ```
 retro-playbook/
-├── SKILL.md                  主文件：判断动作、六项检验、铁律、完成标准、闭上环
-├── references/
-│   ├── capture.md            复盘入库流程（回填 → 读材料 → 找信号 → 追问 → 归因陷阱 → 查重 → 写入）
-│   ├── recall.md             开工唤醒流程
-│   ├── lint.md               体检流程
-│   ├── lesson-format.md      教训文件格式、四种类型、复核期
-│   └── marketing.md          营销项目高信号区与示例
-├── scripts/lessons.py        建库 / 检索 / 体检 / 记账 / 归档 / 回填追踪
-└── evals/                    评测素材、基线、装 skill 后的产出、评分表
+├── skills/retro-playbook/        ← 安装的只有这个文件夹
+│   ├── SKILL.md                  主文件：判断动作、六项检验、铁律、完成标准、闭上环
+│   ├── references/
+│   │   ├── capture.md            复盘入库流程（回填 → 读材料 → 找信号 → 追问 → 归因陷阱 → 查重 → 写入）
+│   │   ├── recall.md             开工唤醒流程
+│   │   ├── lint.md               体检流程
+│   │   ├── lesson-format.md      教训文件格式、四种类型、复核期
+│   │   └── marketing.md          营销项目高信号区与示例
+│   └── scripts/lessons.py        建库 / 检索 / 体检 / 记账 / 归档 / 回填追踪
+└── evals/                        评测素材、基线、装 skill 后的产出、评分表（不随 skill 安装）
 ```
 
 ## 协议
