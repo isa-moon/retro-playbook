@@ -73,4 +73,4 @@ retro-playbook/
 
 ## 协议
 
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)：可以自由使用、修改和分享，但须署名，且不得用于商业目的。
+[MIT](LICENSE)：可以自由使用、修改、分发，包括商业用途，只需保留版权声明。

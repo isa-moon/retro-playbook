@@ -4,7 +4,7 @@ description: >-
   复盘书：把项目复盘变成下次真的会被用上的经验，让同一个坑只踩一次。维护一个跨项目的本地经验库，有三个动作：复盘入库（项目结束或出事后，提炼少量合格教训，查重合并后入库）、开工唤醒（接新项目、新 brief、写方案或排期前，把库里相关的坑和基准翻出来，写进计划）、体检（合并重复、复核过期、按实际效果校准或证伪）。
   Trigger when the user names "复盘书"/"Retro Playbook"/"retro-playbook"/"/retro-playbook"; asks to 复盘、结案复盘、项目回顾、总结经验/教训、沉淀经验、post-mortem、retro; says "下次别再犯""上次是不是踩过这个坑""之前有没有类似项目的经验"; asks to check past lessons before starting a project ("开工前查一下经验库""这个新项目有什么要注意的，看看以前的经验"); or asks to tidy/audit the lesson library ("经验库体检""整理一下经验库""这条经验好像不对").
   Do not trigger for plain weekly reports, meeting minutes with no lessons intent, summarizing a single document, code-level debugging postmortems that only need a fix, or a new-project request where the user has not asked about past experience and no rule file tells you to check the library.
-license: CC-BY-NC-4.0
+license: MIT
 compatibility: Works on any Agent Skills platform. Needs filesystem read/write for the library folder. scripts/lessons.py needs Python 3.8+ (standard library only); without it, do the same steps by hand — the library is plain Markdown.
 metadata:
   version: "0.1.0"
